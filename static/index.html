@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Mail Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Placement Mail Assistant</h1>
+
+        <div class="profile-section">
+
+            <h2>Student Profile</h2>
+
+            <input
+                type="text"
+                id="batch"
+                placeholder="Batch (Example: 2028)"
+            >
+
+            <input
+                type="text"
+                id="branch"
+                placeholder="Branch (Example: CSE)"
+            >
+
+            <input
+                type="number"
+                step="0.1"
+                id="cgpa"
+                placeholder="CGPA"
+            >
+
+        </div>
+
+        <textarea
+            id="emailText"
+            placeholder="Paste placement email here..."
+        ></textarea>
+
+        <button onclick="analyzeEmail()">
+            Analyze Email
+        </button>
+
+        <div id="result"></div>
+
+        <div id="savedJobs"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
